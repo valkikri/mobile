@@ -1,13 +1,27 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>{{name}}</ion-title> 
+    
   </ion-toolbar>
 </ion-header>
-
+    <ion-item>
+      <ion-input label="Ввод данных" [(ngModel)]="name"></ion-input>
+      <ion-button (click) = "changeBUTTON()">Добавить символ</ion-button>
+    </ion-item> 
+    <ion-item *ngFor="let book of books">
+      {{book.name}}
+    </ion-item> 
 <ion-content [fullscreen]="true">
-
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+  </ion-card>
   <div id="container">
     <strong>Ready to create an jhgjhgc?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>

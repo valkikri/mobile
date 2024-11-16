@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+ 
+name: string = "Заголовок"
+books = [{name: "a", author: "dsfsdfsdf"}, {name: "aer", author: "dsfsdfertesdf"}] 
 
+
+
+changeBUTTON(){
+  this.name += "po"
 }
+  constructor() {}
+} 
